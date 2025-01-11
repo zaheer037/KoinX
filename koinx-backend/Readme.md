@@ -113,7 +113,7 @@ Calculate the standard deviation of the last 100 prices for a cryptocurrency.
 
 ## **Deployment**
 
-- **Live URL**: [[Render Link](https://koinx-r0ej.onrender.com)](#)
+- **Live URL**: [Render Link](https://koinx-r0ej.onrender.com)
 
 ---
 
