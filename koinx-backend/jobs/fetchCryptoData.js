@@ -1,4 +1,5 @@
 const axios = require("axios");
+const moment = require("moment-timezone");
 const CryptoData = require("../models/CryptoData");
 
 const fetchCryptoData = async () => {
@@ -30,7 +31,7 @@ const fetchCryptoData = async () => {
             console.log(`Fetched data for ${coin}:`, data[coin]); // Moved inside the loop
         }
 
-        console.log("Scheduled job executed at:", new Date());
+        console.log("Scheduled job executed at:", moment().tz("Asia/Kolkata").format("YYYY-MM-DD HH:mm:ss"));
     } catch (err) {
         console.error("Error fetching crypto data:", err.message);
     }
