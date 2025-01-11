@@ -5,11 +5,12 @@ const fetchCryptoData = require("../jobs/fetchCryptoData");
 
 router.get("/fetch", async (req, res) => {
     try {
+        console.log("Manual fetch initiated...");
         await fetchCryptoData();
-        res.json({ message: "Crypto data fetched and stored successfully." });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: "Error fetching crypto data." });
+        res.send("Data fetch complete.");
+    } catch (err) {
+        console.error("Error during manual fetch:", err);
+        res.status(500).send("Error during data fetch.");
     }
 });
 

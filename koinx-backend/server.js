@@ -1,6 +1,5 @@
 require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
 const schedule = require("node-schedule");
 const fetchCryptoData = require("./jobs/fetchCryptoData");
 const statsRoute = require("./routes/stats");

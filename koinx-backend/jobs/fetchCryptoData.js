@@ -27,9 +27,10 @@ const fetchCryptoData = async () => {
             });
             await cryptoRecord.save();
             console.log(`Data for ${coin} saved successfully.`);
+            console.log(`Fetched data for ${coin}:`, data[coin]); // Moved inside the loop
         }
-        console.log(`Fetched data for ${coin}:`, data[coin]);
-        console.log("Fetched data from API:", data);
+
+        console.log("Scheduled job executed at:", new Date());
     } catch (err) {
         console.error("Error fetching crypto data:", err.message);
     }
