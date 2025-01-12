@@ -1,0 +1,119 @@
+/* Sentiment.css */
+.sentiment {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sentiment-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.key-events {
+  margin-bottom: 30px;
+}
+
+.key-event-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.key-event-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key-event-card h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.key-event-card p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.blue-card {
+  background-color: #007bff;
+}
+
+.green-card {
+  background-color: #28a745;
+}
+
+.icon-container {
+  font-size: 2rem;
+}
+
+.analyst-estimates {
+  margin-top: 30px;
+}
+
+.estimates-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.estimate-percentage {
+  text-align: center;
+}
+
+.percentage-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.estimate-bars {
+  flex: 1;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.bar span {
+  margin-right: 10px;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #007bff;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.buy-bar .progress {
+  background-color: #007bff;
+}
+
+.hold-bar .progress {
+  background-color: #ffc107;
+}
+
+.sell-bar .progress {
+  background-color: #dc3545;
+}

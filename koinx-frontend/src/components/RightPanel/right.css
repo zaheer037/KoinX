@@ -1,0 +1,57 @@
+/* Parent Container for Performance and RightPanel */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.performance-component {
+  flex: 3; /* Take up 75% width */
+}
+
+.right-panel {
+  flex: 1; /* Take up 25% width */
+  margin-left: 1rem;
+}
+
+.get-started-section {
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 8px;
+}
+
+.get-started-section h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.get-started-section .btn {
+  background-color: white;
+  color: #1a73e8;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.trending-coins-section .list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.trending-coins-section .coin-logo {
+  border-radius: 50%;
+}
+
+.trending-coins-section .change24h.text-success {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.trending-coins-section .change24h.text-danger {
+  color: #dc3545;
+  font-weight: bold;
+}

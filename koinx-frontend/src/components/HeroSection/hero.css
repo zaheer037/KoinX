@@ -1,0 +1,58 @@
+/* Hero Section Layout */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1328px;
+    /* Ensure it doesn't exceed parent container */
+    margin: 0 auto;
+    /* Center align the section horizontally */
+    padding: 0;
+}
+
+/* Coin Details Section (Left Side) */
+.coin-details {
+    flex: 3;
+    /* Occupy majority of the space */
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Price Details Styling */
+.price-details h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.price-details .badge {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 20px;
+}
+
+/* Right Panel Section */
+.right-panel {
+    flex: 1;
+    /* Occupy smaller space */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.right-panel .btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+}
